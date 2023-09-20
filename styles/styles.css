@@ -12,12 +12,12 @@ aside {
 }
 
 aside img {
-    max-width: 100%;
+    width: 200px;
     height: auto;
 }
 
 main img {
-    max-width: 100%;
+    width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
