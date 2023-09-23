@@ -1,0 +1,71 @@
+/* Import Google Fonts API */
+@import url('https://fonts.google.com/noto/specimen/Noto+Sans+JP');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #173753;
+    --secondary-color: #6DAEDB;
+    --accent1-color: #2892D7;
+    --accent2-color: #1B4353;
+
+    --heading-font: 'https://fonts.google.com/noto/specimen/Noto+Sans+JP', serif;
+    --paragraph-font: 'https://fonts.google.com/specimen/Croissant+One', serif;
+
+    --nav-background-color: #B4B8AB;
+    --nav-link-color: #004e98;
+    --nav-hover-link-color: #004e98;
+    --nav-hover-background-color: #284B63;
+}
+
+/* Body selector rule */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px; 
+    padding: 20px;
+}
+
+/* Headings grouping selector */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Header selector */
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+/* Paragraph selector */
+p {
+    padding: 25px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
