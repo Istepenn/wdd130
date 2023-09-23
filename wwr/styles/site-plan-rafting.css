@@ -1,5 +1,5 @@
 /* Import Google Fonts API */
-@import url('https://fonts.google.com/noto/specimen/Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 /* Define CSS variables */
 :root {
@@ -8,8 +8,8 @@
     --accent1-color: #2892D7;
     --accent2-color: #1B4353;
 
-    --heading-font: 'https://fonts.google.com/noto/specimen/Noto+Sans+JP', serif;
-    --paragraph-font: 'https://fonts.google.com/specimen/Croissant+One', serif;
+    --heading-font: 'Noto Sans JP', sans-serif;
+    --paragraph-font: 'Croissant One', sans-serif;
 
     --nav-background-color: #B4B8AB;
     --nav-link-color: #004e98;
@@ -20,13 +20,13 @@
 /* Body selector rule */
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px; 
+    max-width: 960px;
+    margin: 0 auto; /* Center-align content */
     padding: 20px;
 }
 
 /* Headings grouping selector */
-
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -39,7 +39,7 @@ header {
 
 /* Paragraph selector */
 p {
-    padding: 25px;
+    padding: 25px 0; /* Adjusted padding for top and bottom */
 }
 
 /* Navigation styling */
@@ -47,10 +47,11 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-between; /* Distribute links horizontally */
+    align-items: center; /* Vertically center-align items */
 }
 
 nav a {
-    display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
