@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 /* Styles for the main element */
 main {
     max-width: 840px;
@@ -64,15 +73,6 @@ nav a {
 /* Styles for h1 elements */
 h1 {
     color: steelblue;
-}
-
-/* Styles for elements with class "box" */
-.box {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* Additional styles for main images */
