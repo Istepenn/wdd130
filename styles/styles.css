@@ -1,13 +1,16 @@
+/* Resetting styles for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Styles for the main element */
 main {
     max-width: 840px;
 }
 
+/* Styles for the aside element */
 aside {
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -17,13 +20,15 @@ aside {
     text-align: center;
 }
 
+/* Styles for images inside the aside element */
 aside img {
     width: 200px;
     height: auto;
 }
 
+/* Styles for images inside the main element */
 main img {
-    float : right;
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -31,48 +36,56 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
+/* Reset padding for all paragraphs */
 p {
     padding: 0;
 }
 
+/* Styles for the footer element */
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
 
+/* Styles for the nav element */
 nav {
     background-color: steelblue;
     padding: 10px;
 }
 
+/* Styles for links inside the nav element */
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
 
+/* Styles for h1 elements */
 h1 {
     color: steelblue;
 }
 
+/* Styles for elements with class "box" */
 .box {
     margin: 1rem;
     padding: 1rem;
-    background-color: #f0f0f0; 
-    color: #333; 
+    background-color: #f0f0f0;
+    color: #333;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/* Additional styles for main images */
 main img {
     float: right;
 }
 
-
+/* Additional styles for the aside element */
 aside {
     position: relative;
 }
 
+/* Additional styles for h2 elements inside the aside element */
 aside h2 {
     position: absolute;
     top: 47px;
