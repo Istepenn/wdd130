@@ -1,11 +1,8 @@
-/* Universal Selector (Wildcard) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Existing CSS */
 
 main {
     max-width: 840px;
