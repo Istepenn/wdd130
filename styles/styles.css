@@ -1,3 +1,12 @@
+/* Universal Selector (Wildcard) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Existing CSS */
+
 main {
     max-width: 840px;
 }
@@ -17,6 +26,7 @@ aside img {
 }
 
 main img {
+    float : right;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
@@ -47,4 +57,27 @@ nav a {
 
 h1 {
     color: steelblue;
+}
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0; 
+    color: #333; 
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main img {
+    float: right;
+}
+
+
+aside {
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
