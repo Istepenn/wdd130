@@ -1,0 +1,86 @@
+/* Import Google Fonts */
+@import url('https://fonts.google.com/specimen/Young+Serif');
+
+/* Define CSS variables for color schema */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #e74c3c;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --social-link-color: #3498db;
+}
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a max-width for the entire page */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Your Font Here', sans-serif;
+  background-color: var(--background-color);
+}
+
+/* Style headings and paragraphs */
+h1, h2 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+/* Remove underlines from social media links */
+.social-link {
+  text-decoration: none;
+}
+
+/* Style the Hero Container */
+.hero {
+  position: relative;
+  max-width: 100%;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #fff;
+  background-color: rgba(52, 152, 219, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hero article {
+  position: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.hero article p {
+  color: var(--text-color);
+}
+
+.hero article img {
+  float: right;
+  margin-left: 50px;
+  max-width: 40%;
+}
+
+/* Additional styles can be added based on your website design plan */
