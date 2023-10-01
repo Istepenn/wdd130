@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.google.com/specimen/Young+Serif');
+@import url('https://fonts.googleapis.com/css?family=Young+Serif');
 
 /* Define CSS variables for color schema */
 :root {
@@ -20,7 +20,7 @@ body, h1, h2, p {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Your Font Here', sans-serif;
+  font-family: 'Young Serif', sans-serif; /* Use the imported font */
   background-color: var(--background-color);
 }
 
@@ -51,7 +51,6 @@ p {
 }
 
 .hero h1 {
-  position: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -63,7 +62,6 @@ p {
 }
 
 .hero article {
-  position: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
