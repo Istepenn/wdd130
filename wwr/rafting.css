@@ -1,84 +1,95 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Young+Serif');
-
-/* Define CSS variables for color schema */
-:root {
-  --primary-color: #3498db;
-  --secondary-color: #e74c3c;
-  --text-color: #333;
-  --background-color: #f5f5f5;
-  --social-link-color: #3498db;
-}
-
-/* Reset default margin and padding */
+/* Reset some default margin and padding */
 body, h1, h2, p {
   margin: 0;
   padding: 0;
 }
 
-/* Set a max-width for the entire page */
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Young Serif', sans-serif; /* Use the imported font */
-  background-color: var(--background-color);
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 10px 0;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Style headings and paragraphs */
-h1, h2 {
-  color: var(--primary-color);
-}
-
-p {
-  color: var(--text-color);
-}
-
-/* Remove underlines from social media links */
-.social-link {
-  text-decoration: none;
-}
-
-/* Style the Hero Container */
-.hero {
-  position: relative;
-  max-width: 100%;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 36px;
-  color: #fff;
-  background-color: rgba(52, 152, 219, 0.8);
-  padding: 20px;
+.logo {
+  border: 2px solid white;
+  padding: 10px;
+  display: inline-block;
   border-radius: 5px;
 }
 
-.hero article {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
+.centered-nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navigation styles */
+.navigation {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 20px;
+  color: white;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+/* Social media links in the footer */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add icon-specific classes for different social media platforms (e.g., .facebook-icon, .twitter-icon) */
+.social-icons a:hover {
+  text-decoration: none;
+  opacity: 0.8; /* Reduce opacity on hover for a subtle effect */
+}
+
+/* Box styling for images within content boxes */
+.hero,
+.article,
+.testimonial {
+  border: 2px solid #ddd;
   padding: 20px;
-  width: 50%;
-  opacity: 0.9;
+  margin: 20px 0;
 }
 
-.hero article p {
-  color: var(--text-color);
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }
-
-.hero article img {
-  float: right;
-  margin-left: 50px;
-  max-width: 40%;
-}
-
-/* Additional styles can be added based on your website design plan */

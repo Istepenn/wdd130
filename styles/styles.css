@@ -8,13 +8,13 @@
 /* Grid container for centering */
 .grid-container {
   max-width: 840px;
-  margin: 0 auto;
+  margin: 0 ;
   display: grid;
   grid-template-columns: 1fr 20rem;
   /* Two columns: one for main, one for aside */
   gap: 1rem;
   /* Spacing between main and aside */
-  text-align: center;
+  text-align: ;
   /* Center text within the grid */
 }
 
@@ -26,7 +26,7 @@ header {
   text-align: center;
   /* Center text within the header */
   border-bottom: 1px solid #000;
-  /* Add a bottom border to h1 */
+  /* Add bottom border to h1 */
 }
 
 /* Styles for the main element */
@@ -35,7 +35,7 @@ main {
   margin: 0 auto;
   /* Center the main content horizontally */
   border-bottom: 1px solid #000;
-  /* Add a bottom border to h1 */
+  /* Add bottom border to h1 */
   text-align: center;
   /* Center text within the main content */
 }
@@ -48,7 +48,7 @@ aside {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1em;
   background-color: #eee;
-  color: #000; /* Updated text color to black for visibility */
+  color: #eee;
   text-align: center;
 }
 
