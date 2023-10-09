@@ -1,105 +1,111 @@
 /* Resetting styles for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+/* Grid container for centering */
+.grid-container {
+  max-width: 840px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  /* Two columns: one for main, one for aside */
+  gap: 1rem;
+  /* Spacing between main and aside */
+  text-align: center;
+  /* Center text within the grid */
+}
+
+/* Styles for the header element */
+header {
+  max-width: 840px;
+  margin: 0 auto;
+  /* Center the header horizontally */
+  text-align: center;
+  /* Center text within the header */
+  border-bottom: 1px solid #000;
+  /* Add a bottom border to h1 */
 }
 
 /* Styles for the main element */
 main {
-    margin: 1rem; /* Add margin here for spacing */
+  max-width: 840px;
+  margin: 0 auto;
+  /* Center the main content horizontally */
+  border-bottom: 1px solid #000;
+  /* Add a bottom border to h1 */
+  text-align: center;
+  /* Center text within the main content */
 }
 
 /* Styles for the aside element */
 aside {
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+  max-width: 840px;
+  margin: 0 auto;
+  /* Center the aside horizontally */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background-color: #eee;
+  color: #000; /* Updated text color to black for visibility */
+  text-align: center;
 }
 
 /* Styles for images inside the aside element */
 aside img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 /* Styles for images inside the main element */
 main img {
-    float: right;
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+  float: right;
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
 }
 
 /* Reset padding for all paragraphs */
 p {
-    padding: 0;
+  padding: 0;
 }
 
 /* Styles for the footer element */
 footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
+  max-width: 840px;
+  margin: 0 auto;
+  /* Center the footer horizontally */
+  border-top: 1px solid #000;
+  text-align: center;
 }
 
 /* Styles for the nav element */
 nav {
-    background-color: steelblue;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  /* Use CSS Flex to justify links evenly */
+  align-items: center;
+  /* Center vertically */
 }
 
 /* Styles for links inside the nav element */
 nav a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff; /* shorthand for white */
+  color: white;
+  display: block;
+  padding: 0.5rem;
+  /* Updated padding */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 /* Add a bottom border to the heading h1 element */
 h1 {
-    color: steelblue;
-    border-bottom: 2px solid steelblue;
-}
-
-/* Encase the main and aside elements in a div element with a class attribute named "grid" */
-.grid {
-    display: grid;
-    align-items: center;
-    max-width: 840px;
-    margin: 0 auto;
-    grid-template-columns: 1fr 20rem; /* Define columns with widths */
-}
-
-/* Define grid layout for main and aside */
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
-
-aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
+  color: steelblue;
+  border-bottom: 1px solid #000;
 }
