@@ -73,10 +73,7 @@
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
-  align-items: center;
-  /* Center the content vertically within the flex container */
-  justify-content: space-between;
-  /* Create space between the flex items */
+  align-items: flex-start; /* Align the content at the top of the flex container */
 }
 
 .white-water-rafting {
@@ -94,34 +91,28 @@
 }
 
 .image img {
-  max-width: 20%;
+  max-width: 20%; 
   height: auto;
 }
 
 .histories {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Adjust to left-align the content */
   align-items: center;
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
-  text-align: center;
-  /* Center-align the text within the element */
+  text-align: center; /* Center-align the text within the element */
 }
 
-.history {
-
+.contact-form {
   flex: 1;
-  /* Make the text take up available space */
+  /* Make the form take up available space */
+  padding: 10px; /* Add some padding to space the form elements */
+  text-align: left; /* Left-align text within the form */
+  box-sizing: border-box;
 }
 
-
-.history p {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  /* Additional styling for paragraphs if needed */
-}
 
 .image {
   text-align: center;
@@ -145,10 +136,8 @@
 }
 
 .page-title {
-  font-size: 24px;
-  /* You can adjust the size as needed */
-  margin-top: 20px;
-  /* Add space above the title */
+  font-size: 24px; /* You can adjust the size as needed */
+  margin-top: 20px; /* Add space above the title */
 }
 
 .adventures-grid {
@@ -179,41 +168,34 @@
 }
 
 footer {
-  background-color: #decafb;
-  color: #040303;
-  padding: 20px;
-  text-align: right;
+  background-color: #decafb; 
+  color: #040303; 
+  padding: 20px; 
+  text-align: right; 
 }
 
 /* Style the social icons */
 .social-icons {
   margin: 10px 0;
   display: flex;
-  justify-content: flex-end;
-  /* To align the icons to the right */
+  justify-content: flex-end; /* To align the icons to the right */
 }
 
 .social-link {
   text-decoration: none;
-  margin: 0 10px;
-  /* Reduce the margin between icons */
+  margin: 0 10px; /* Reduce the margin between icons */
   color: #060505;
 }
 
 .social-link img {
-  width: 30px;
-  /* Set the width to make the images smaller */
-  height: 30px;
-  /* Set the height to make the images smaller */
-  border-radius: 50%;
-  /* Make the icobns circular */
+  width: 30px; /* Set the width to make the images smaller */
+  height: 30px; /* Set the height to make the images smaller */
+  border-radius: 50%; /* Make the icobns circular */
 }
 
 
 /* Style the copyright text */
 p {
-  font-size: 14px;
-  /* Adjust the font size */
-  margin: 10px 0;
-  /* Add some margin to space out the text */
+  font-size: 14px; /* Adjust the font size */
+  margin: 10px 0; /* Add some margin to space out the text */
 }
