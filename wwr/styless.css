@@ -1,0 +1,23 @@
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.animated-text {
+    font-size: 24px;
+    animation: moveText 4s linear infinite;
+}
