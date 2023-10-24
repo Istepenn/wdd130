@@ -50,152 +50,182 @@
   padding: 5px 10px;
 }
 
-/* Add your container, column, and other styles as needed */
+/* Style the container */
 .container {
+  position: relative;
+  /* Ensure relative positioning for absolute positioning of inner elements */
+  background: url('images/julie-thornton-473049-unsplash.jpg') center/cover no-repeat;
+  /* Set the background image */
+  width: 100%;
+  /* Optionally set a width */
+  height: 400px;
+  /* Set the height as needed */
   text-align: center;
-}
-
-.rows {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 3px solid #ddd;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.container {
-  text-align: center;
-}
-
-.box {
-  display: flex;
-  border: 1px solid #ccc;
+  /* Center-align text within the container */
+  color: #fff;
+  /* Text color */
   padding: 20px;
-  margin: 10px;
-  align-items: flex-start; /* Align the content at the top of the flex container */
+  /* Add some padding for spacing */
 }
 
-.white-water-rafting {
-  flex: 1;
+/* Style the heading */
+.white-water-rafting h1 {
+  font-size: 2em;
+  /* Adjust the font size as needed */
+  margin: 0;
+  /* Remove default margin */
 }
 
-.box p {
-  border: 1px solid #ccc;
-  padding: 0;
-  margin: 1px;
+/* Style the paragraph */
+.white-water-rafting p {
+  font-size: 1.2em;
+  /* Adjust the font size as needed */
+  margin: 10px 0;
+  /* Add some margin for spacing */
 }
 
-.image {
-  text-align: right;
-}
-
-.image img {
-  max-width: 20%; 
-  height: auto;
-}
-
-.histories {
-  display: flex;
-  justify-content: flex-start; /* Adjust to left-align the content */
-  align-items: center;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-  text-align: center; /* Center-align the text within the element */
-}
-
-.contact-form {
-  flex: 1;
-  /* Make the form take up available space */
-  padding: 10px; /* Add some padding to space the form elements */
-  text-align: left; /* Left-align text within the form */
-  box-sizing: border-box;
-}
-
-
-.image {
-  text-align: center;
-  flex: 1;
-  /* Make the image take up available space */
-}
-
-.image img {
-  max-width: 100%;
-  /* Ensure the image resizes appropriately */
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container {
-  text-align: center;
-}
-
-.page-title {
-  font-size: 24px; /* You can adjust the size as needed */
-  margin-top: 20px; /* Add space above the title */
-}
-
-.adventures-grid {
-  text-align: center;
-}
-
-.adventure {
-  border: 1px solid #000;
-  margin: 5px;
-  padding: 10px;
+/* Style the "Explore Our Trips" link */
+.cta-link {
   display: inline-block;
+  /* Make the link a block element for styling */
+  background-color: #0074e4;
+  /* Background color for the link */
+  color: #fff;
+  /* Text color for the link */
+  padding: 10px 20px;
+  /* Add padding for spacing */
+  text-decoration: none;
+  /* Remove underlines from the link */
+  border-radius: 5px;
+  /* Add rounded corners */
+  margin-top: 20px;
+  /* Add some margin at the top */
 }
 
-.adventure figure {
+/* Hover effect for the link */
+.cta-link:hover {
+  background-color: #0055a5;
+  /* Change background color on hover */
+}
+
+/* Style the main container */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  /* Adjust the gap between the two sections */
+}
+
+/* Style the welcome container */
+.welcome-container {
+  width: 100%;
+  /* Use 100% width for full-width container */
+  background: url('images/julie-thornton-473049-unsplash.jpg') center/cover no-repeat;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  /* Add rounded corners to the box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Add a box shadow for depth */
+}
+
+/* Style the heading in the welcome container */
+.welcome-container h1 {
+  font-size: 2em;
   margin: 0;
 }
 
-.adventure img {
-  width: 100%;
-  /* Set the width to 100% to ensure they have the same width */
-  height: auto;
-  /* Automatically adjust the height to maintain the aspect ratio */
+/* Style the paragraph in the welcome container */
+.welcome-container p {
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 
-.adventure figcaption {
-  margin: 10px 0;
-  /* Add space above and below the header text */
+/* Style the "Explore Our Trips" link in the welcome container */
+.welcome-container .cta-link {
+  display: inline-block;
+  background-color: #0074e4;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
 }
+
+/* Hover effect for the link in the welcome container */
+.welcome-container .cta-link:hover {
+  background-color: #0055a5;
+}
+
+/* Style the grid of adventures */
+.adventures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  /* Adjust the gap between adventures */
+  text-align: center;
+}
+
+/* Style each adventure box */
+.adventure {
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Style the adventure image */
+.adventure img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the adventure caption */
+.adventure figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
 
 footer {
-  background-color: #decafb; 
-  color: #040303; 
-  padding: 20px; 
-  text-align: right; 
+  background-color: #decafb;
+  color: #040303;
+  padding: 20px;
+  text-align: right;
 }
 
 /* Style the social icons */
 .social-icons {
   margin: 10px 0;
   display: flex;
-  justify-content: flex-end; /* To align the icons to the right */
+  justify-content: flex-end;
+  /* To align the icons to the right */
 }
 
 .social-link {
   text-decoration: none;
-  margin: 0 10px; /* Reduce the margin between icons */
+  margin: 0 10px;
+  /* Reduce the margin between icons */
   color: #060505;
 }
 
 .social-link img {
-  width: 30px; /* Set the width to make the images smaller */
-  height: 30px; /* Set the height to make the images smaller */
-  border-radius: 50%; /* Make the icobns circular */
+  width: 30px;
+  /* Set the width to make the images smaller */
+  height: 30px;
+  /* Set the height to make the images smaller */
+  border-radius: 50%;
+  /* Make the icobns circular */
 }
 
 
 /* Style the copyright text */
 p {
-  font-size: 14px; /* Adjust the font size */
-  margin: 10px 0; /* Add some margin to space out the text */
+  font-size: 14px;
+  /* Adjust the font size */
+  margin: 10px 0;
+  /* Add some margin to space out the text */
 }

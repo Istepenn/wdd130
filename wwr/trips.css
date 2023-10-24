@@ -1,0 +1,271 @@
+/* Resetting styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Grid container for centering */
+.grid-container {
+  max-width: 840px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  gap: 1rem;
+}
+
+/* Header styles for the logo and navigation */
+.header {
+  display: flex;
+  justify-content: space-between; /* Update to space between for better alignment */
+  align-items: center;
+  background-color: #dacafb;
+  padding: 20px;
+  border: 1px solid #ddd; /* Correct the border property */
+  border-radius: 5px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+/* Box the text in the navigation links */
+.navigation li a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* Add your container, column, and other styles as needed */
+.container {
+  text-align: center;
+}
+
+/* Remove duplicate .container and .image styles */
+.rows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.box {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  align-items: flex-start;
+}
+
+.white-water-rafting {
+  flex: 1;
+}
+
+.box p {
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 1px;
+}
+
+.image {
+  text-align: right;
+}
+
+.image img {
+  max-width: 20%;
+  height: auto;
+}
+
+.histories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Remove duplicate .contact-form and .image styles */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove duplicate .container style */
+.page-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.adventures-grid {
+  text-align: center;
+}
+
+.adventure {
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.adventure figure {
+  margin: 0;
+}
+
+.adventure img {
+  width: 100%;
+  height: auto;
+}
+
+.adventure figcaption {
+  margin: 10px 0;
+}
+
+/* Pop-up styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1;
+}
+
+.popuptext {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: #decafb;
+  color: #040303;
+  padding: 20px;
+  text-align: right;
+}
+
+/* Style the social icons */
+.social-icons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-link {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #060505;
+}
+
+.social-link img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Style the copyright text */
+p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Additional styles for trips.html */
+.trip-section {
+  margin: 20px;
+  text-align: center;
+}
+
+.trip-section h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.trip-section p {
+  margin: 10px 0;
+}
+
+.trip-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.trip-table {
+  width: 100%;
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.trip-table caption {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-cta {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.contact-cta:hover {
+  background-color: #0056b3;
+}
+
+/* Testimonials box in columns */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
