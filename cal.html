@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Budget Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Creative Budget Calculator</h1>
+        <div class="input-container">
+            <label for="income">Enter your total income:</label>
+            <input type="number" id="income" placeholder="Total income">
+            <button onclick="calculateBudget()">Calculate</button>
+        </div>
+        <div id="budgetResult" class="result-container">
+            <h2>Budget Breakdown</h2>
+            <div class="budget-item">
+                <span class="item-label">Needs:</span>
+                <span id="needsAmount" class="item-amount"></span>
+            </div>
+            <div class="budget-item">
+                <span class="item-label">Wants:</span>
+                <span id="wantsAmount" class="item-amount"></span>
+            </div>
+            <div class="budget-item">
+                <span class="item-label">Savings & Debt:</span>
+                <span id="savingsDebtAmount" class="item-amount"></span>
+            </div>
+            <div class="budget-item">
+                <span class="item-label">Tithing:</span>
+                <span id="tithingAmount" class="item-amount"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
