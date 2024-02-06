@@ -1,106 +1,231 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Resetting styles for all elements */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-}
-
-.calculator {
-    max-width: 500px;
-    margin: 50px auto;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.input-container {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.input-container label {
-    display: block;
-    margin-bottom: 10px;
-    color: #555;
-    font-size: 18px;
-}
-
-.input-container input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #007bff;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-.input-container input:focus {
-    outline: none;
-    border-color: #ff6b6b;
-}
-
-.input-container button {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.input-container button:hover {
-    background-color: #0056b3;
-}
-
-.result-container {
-    display: none;
-    margin-top: 30px;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    animation: borderBackground 4s infinite alternate;
-}
-
-@keyframes borderBackground {
-    0% {
-        border: 2px solid #007bff;
-    }
-    100% {
-        border: 2px solid #ff6b6b;
-    }
-}
-
-.result-container h2 {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 24px;
-}
-
-.budget-item {
-    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Grid container for centering */
+  .grid-container {
+    max-width: 840px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+    gap: 1rem;
+  }
+  
+  /* Header styles for the logo and navigation */
+  .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.item-label {
-    color: #555;
-    font-size: 18px;
-}
-
-.item-amount {
-    font-size: 18px;
+    background-color: #dacafb;
+    padding: 20px;
+    border: px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .logo img {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navigation li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Box the text in the navigation links */
+  .navigation li a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  /* Style the container */
+  .container {
+    position: relative;
+    /* Ensure relative positioning for absolute positioning of inner elements */
+    background: url('images/julie-thornton-473049-unsplash.jpg') center/cover no-repeat;
+    /* Set the background image */
+    width: 100%;
+    /* Optionally set a width */
+    height: 400px;
+    /* Set the height as needed */
+    text-align: center;
+    /* Center-align text within the container */
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    /* Add some padding for spacing */
+  }
+  
+  /* Style the heading */
+  .white-water-rafting h1 {
+    font-size: 2em;
+    /* Adjust the font size as needed */
+    margin: 0;
+    /* Remove default margin */
+  }
+  
+  /* Style the paragraph */
+  .white-water-rafting p {
+    font-size: 1.2em;
+    /* Adjust the font size as needed */
+    margin: 10px 0;
+    /* Add some margin for spacing */
+  }
+  
+  /* Style the "Explore Our Trips" link */
+  .cta-link {
+    display: inline-block;
+    /* Make the link a block element for styling */
+    background-color: #0074e4;
+    /* Background color for the link */
+    color: #fff;
+    /* Text color for the link */
+    padding: 10px 20px;
+    /* Add padding for spacing */
+    text-decoration: none;
+    /* Remove underlines from the link */
+    border-radius: 5px;
+    /* Add rounded corners */
+    margin-top: 20px;
+    /* Add some margin at the top */
+  }
+  
+  /* Hover effect for the link */
+  .cta-link:hover {
+    background-color: #0055a5;
+    /* Change background color on hover */
+  }
+  
+  /* Style the main container */
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    /* Adjust the gap between the two sections */
+  }
+  
+  /* Style the welcome container */
+  .welcome-container {
+    width: 100%;
+    /* Use 100% width for full-width container */
+    background: url('images/julie-thornton-473049-unsplash.jpg') center/cover no-repeat;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* Add rounded corners to the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Add a box shadow for depth */
+  }
+  
+  /* Style the heading in the welcome container */
+  .welcome-container h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  /* Style the paragraph in the welcome container */
+  .welcome-container p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  /* Style the "Explore Our Trips" link in the welcome container */
+  .welcome-container .cta-link {
+    display: inline-block;
+    background-color: #0074e4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Hover effect for the link in the welcome container */
+  .welcome-container .cta-link:hover {
+    background-color: #0055a5;
+  }
+  
+  /* Style the grid of adventures */
+  .adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    /* Adjust the gap between adventures */
+    text-align: center;
+  }
+  
+  /* Style each adventure box */
+  .adventure {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Style the adventure image */
+  .adventure img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the adventure caption */
+  .adventure figcaption {
+    margin-top: 10px;
     font-weight: bold;
-    color: #007bff;
-}
+  }
+  
+  
+  
+  footer {
+    background-color: #decafb;
+    color: #040303;
+    padding: 20px;
+    text-align: right;
+  }
+  
+  /* Style the social icons */
+  .social-icons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    /* To align the icons to the right */
+  }
+  
+  .social-link {
+    text-decoration: none;
+    margin: 0 10px;
+    /* Reduce the margin between icons */
+    color: #060505;
+  }
+  
+  .social-link img {
+    width: 30px;
+    /* Set the width to make the images smaller */
+    height: 30px;
+    /* Set the height to make the images smaller */
+    border-radius: 50%;
+    /* Make the icobns circular */
+  }
+  
+  
+  /* Style the copyright text */
+  p {
+    font-size: 14px;
+    /* Adjust the font size */
+    margin: 10px 0;
+    /* Add some margin to space out the text */
+  }
