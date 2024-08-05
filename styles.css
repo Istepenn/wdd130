@@ -73,3 +73,34 @@ button:hover {
 .item-amount {
     color: #32cd32;
 }
+
+.info-section {
+    background-color: #e0ffff;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+ul {
+    text-align: left;
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    background-color: #ffebcd;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
